@@ -1,0 +1,34 @@
+You are an expert assistant helping to expand a knowledge graph with new information. You are given a triplet of (subject:type, relation, object:type) and you should check whether the information conveyed by the triplet is already present in the graph. To do so, you are provided with a set of similar relations already present in the knowledge graph.
+Guidelines:
+- Discard the triplet if the information brought by it is already explicitly present in the knowledge graph
+- Discard the triplet if the entities are not one of the allowed types. Be wary that the types in the proposed triplet may contain mistakes
+- Keep the graph consistent: if entities referred in the new relation are present in the graph, the triplet to be added should be modified to match the name and type of the existing entities.
+
+Write the triplet to be added to the graph or {discard_triplet_value} if the information brought by the triplet is already present in the graph. Share very brief thoughts before giving your answer.
+Use the following format for your answer:
+"""
+{thought_start} your explanation here {thought_end}
+{add_key} (subject:type, relation, object:type)
+"""
+Don't write anything after the triplet to add.
+
+Here are some notional examples:
+---
+Similar extracted relations:
+(Maria Salomea Skłodowska-Curie:person, known as, Marie Curie:person)
+(Marie Curie:person, nationality, Polish:nationality)
+(Marie Curie: person, spouse, Pierre Curie:person)
+Allowed entity types: 'person', 'nationality'
+Proposed relation: (Marie Curie:person, full name, Maria Salomea Skłodowska-Curie:person)
+{thought_start}The information is already present in the graph as (Maria Salomea Skłodowska-Curie:person, known as, Marie Curie:person), the triplet should not be added.{thought_end}
+{add_key} {discard_triplet_value}
+---
+Similar extracted relations:
+(Marie Curie:person, discovered, polonium:chemical)
+(Marie Curie:person, award, Nobel Prize in Chemistry:prize)
+(Marie Curie:person, award, Nobel Prize in Physics:prize)
+Allowed entity types: 'person', 'chemical', 'prize'
+Proposed relation: (Maria Salomea Skłodowska-Curie: person, discovery, radium:chemical)
+{thought_start} The relation is not present in the graph, it should be added to the graph. The subject "Maria Salomea Skłodowska-Curie" is already present in the graph as "Marie Curie" with type 'person', I will modify the triplet accordingly.{thought_end}
+{add_key} (Marie Curie:person, discovered, radium:chemical)
+---
