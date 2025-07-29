@@ -131,6 +131,41 @@ class RelationsData:
                      node_sequence[i]))
         return triplet_sequence
 
+    def plot_graph(self, figsize: tuple[float, float] = (10, 8), save_path: str = None) -> None:
+        """Create a simple visualization of the knowledge graph."""
+        graph = self.networkx_graph.to_undirected()
+        
+        if len(graph.nodes()) == 0:
+            print("No nodes in graph to plot.")
+            return
+            
+        pos = nx.spring_layout(graph, seed=42, k=0.9)
+        labels = nx.get_node_attributes(graph, 'entity_type')
+        labels = {key: f"{value}\n{key}" for key, value in labels.items()}
+        relations = nx.get_edge_attributes(graph, 'relation')
+        
+        plt.figure(figsize=figsize)
+        nx.draw(graph,
+                pos,
+                labels=labels,
+                with_labels=True,
+                font_size=8,
+                node_size=[len(n) * 300 for n in graph.nodes()],
+                node_color='lightblue',
+                edge_color='gray')
+        nx.draw_networkx_edge_labels(graph,
+                                   pos,
+                                   edge_labels=relations,
+                                   font_size=6,
+                                   label_pos=0.5)
+        plt.title('Knowledge Graph')
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+            plt.close()
+        else:
+            plt.show()
+
 
 class SearchableRelations:
     def __init__(self,

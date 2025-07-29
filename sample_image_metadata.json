@@ -1,0 +1,122 @@
+{
+  "image_metadata": [
+    {
+      "image_id": "img_001",
+      "description": "Alex at sister's wedding ceremony in June 2020",
+      "entities": {
+        "people": ["Alex", "Sister", "Brother-in-law"],
+        "events": ["Sister's Wedding"],
+        "dates": ["June 2020"],
+        "emotions": ["Joy", "Love"],
+        "locations": ["Church", "Reception Hall"]
+      },
+      "text_description": "Alex attended his sister's wedding ceremony in June 2020. The ceremony was held at a beautiful church, followed by a reception at a grand hall. Alex felt immense joy and love as he watched his sister marry her beloved partner, who became his new brother-in-law."
+    },
+    {
+      "image_id": "img_002", 
+      "description": "Alex's graduation from university in New York City",
+      "entities": {
+        "people": ["Alex", "Professor Smith", "Parents"],
+        "events": ["Graduation from University"],
+        "locations": ["New York City", "Columbia University"],
+        "objects": ["Graduation diploma", "Cap and gown"],
+        "emotions": ["Pride", "Accomplishment"]
+      },
+      "text_description": "Alex graduated from Columbia University in New York City. Professor Smith handed him his graduation diploma during the ceremony. Alex wore his cap and gown with pride, and his parents were there to witness this moment of great accomplishment."
+    },
+    {
+      "image_id": "img_003",
+      "description": "Family trip to Cappadocia, Turkey",
+      "entities": {
+        "people": ["Alex", "Mother", "Father", "Sister"],
+        "events": ["Family Trip to Turkey"],
+        "locations": ["Cappadocia", "Turkey", "Hot air balloon"],
+        "emotions": ["Excitement", "Wonder", "Adventure"],
+        "objects": ["Camera", "Travel bags"]
+      },
+      "text_description": "Alex shared a family trip to Cappadocia, Turkey with his mother, father, and sister. They took a hot air balloon ride over the breathtaking landscape. Alex captured many photos with his camera, and the entire family felt excitement, wonder, and a sense of adventure."
+    },
+    {
+      "image_id": "img_004",
+      "description": "Alex's 28th birthday celebration with best friend Sam",
+      "entities": {
+        "people": ["Alex", "Sam", "College friends"],
+        "events": ["28th Birthday", "Birthday party"],
+        "dates": ["May 15, 2025"],
+        "relationships": ["Best friend", "College friends"],
+        "objects": ["Birthday cake", "Gifts"],
+        "emotions": ["Happiness", "Gratitude"]
+      },
+      "text_description": "Alex celebrated his 28th birthday on May 15, 2025. His best friend Sam organized a surprise party with their college friends. There was a beautiful birthday cake and thoughtful gifts. Alex felt overwhelming happiness and gratitude for having such caring friends in his life."
+    },
+    {
+      "image_id": "img_005",
+      "description": "Alex at his favorite café near Central Park",
+      "entities": {
+        "people": ["Alex", "Barista Maria"],
+        "places": ["Bluebird Café", "Central Park"],
+        "relationships": ["Regular customer", "Favorite café"],
+        "objects": ["Coffee", "Laptop", "Novel"],
+        "emotions": ["Peace", "Contentment"]
+      },
+      "text_description": "Alex visited his favorite café, Bluebird Café, which is located nearby Central Park. Barista Maria, who knows him as a regular customer, served him his usual coffee. Alex brought his laptop and a novel, feeling peace and contentment in this special place."
+    },
+    {
+      "image_id": "img_006",
+      "description": "Alex volunteering at local animal shelter",
+      "entities": {
+        "people": ["Alex", "Shelter coordinator Jane"],
+        "events": ["Volunteer work"],
+        "locations": ["Animal shelter"],
+        "objects": ["Dogs", "Cats", "Volunteer badge"],
+        "emotions": ["Compassion", "Fulfillment"],
+        "relationships": ["Volunteer"]
+      },
+      "text_description": "Alex volunteers at the local animal shelter where shelter coordinator Jane oversees operations. Alex helps care for dogs and cats, wearing his volunteer badge with pride. This work gives him a sense of compassion and fulfillment, knowing he's making a difference in animals' lives."
+    },
+    {
+      "image_id": "img_007",
+      "description": "Alex hiking with college roommate Mike",
+      "entities": {
+        "people": ["Alex", "Mike"],
+        "events": ["Hiking trip"],
+        "locations": ["Mountain trail", "Summit"],
+        "relationships": ["College roommate", "Hiking buddy"],
+        "objects": ["Hiking boots", "Backpack", "Water bottle"],
+        "emotions": ["Determination", "Achievement"]
+      },
+      "text_description": "Alex went on a hiking trip with his college roommate Mike to a challenging mountain trail. They reached the summit together, both wearing their hiking boots and carrying backpacks with water bottles. Alex felt determination during the climb and a great sense of achievement upon reaching the top."
+    }
+  ],
+  "additional_metadata": {
+    "person_profile": {
+      "name": "Alex",
+      "age": 28,
+      "key_relationships": [
+        "Sister (married in 2020)",
+        "Brother-in-law",
+        "Sam (best friend since college)",
+        "Mike (college roommate and hiking buddy)",
+        "Parents",
+        "Professor Smith (university mentor)",
+        "Barista Maria (café regular)",
+        "Jane (shelter coordinator)"
+      ],
+      "favorite_places": ["Bluebird Café", "Central Park", "Mountain trails"],
+      "memorable_events": [
+        "Sister's Wedding (June 2020)",
+        "University Graduation (Columbia University)",
+        "Family Trip to Turkey",
+        "28th Birthday (May 15, 2025)"
+      ],
+      "interests": ["Hiking", "Reading", "Photography", "Animal welfare", "Coffee"],
+      "personality_traits": ["Caring", "Adventurous", "Academic", "Social", "Compassionate"]
+    },
+    "relationship_network": {
+      "family": ["Sister", "Brother-in-law", "Mother", "Father"],
+      "friends": ["Sam", "Mike", "College friends"],
+      "professional": ["Professor Smith"],
+      "community": ["Barista Maria", "Jane"]
+    }
+  }
+}
